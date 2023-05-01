@@ -1,13 +1,15 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Items from "../components/Items";
+import Banner from "../components/Banner/Banner";
+import Items from "../components/Items/Items";
 import "../App.css";
 
 function Home() {
   return (
     <>
         <Banner />
-        <Items/>
+      <Items />
+      <div className="body-bg-shape"></div>
+      
     </>
 );
 }

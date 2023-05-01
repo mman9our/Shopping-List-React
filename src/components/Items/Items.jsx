@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { items } from "../data";
-import { CartContext } from "../Context/CartContext";
+import { items } from "../../data";
+import { CartContext } from "../../context/CartContext";
 
 const Items = () => {
   const { addItem } = useContext(CartContext);
@@ -60,13 +60,13 @@ const Items = () => {
 
                       <div className="card-price">
                         <img
-                          src="./assets/images/ethereum.svg"
+                          src="./src/assets/images/svg/ethereum.svg"
                           width="16"
                           height="24"
                           loading="lazy"
                           alt="ethereum icon"
                         />
-                        <span className="span">{card.price}</span>
+                        <span className="span">{card.price} ETH</span>
                       </div>
                     </div>
                   </div>
@@ -80,7 +80,6 @@ const Items = () => {
             <ion-icon name="arrow-forward"></ion-icon>
           </a>
         </div>
-
       </section>
     </>
   );

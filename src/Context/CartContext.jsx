@@ -27,10 +27,9 @@ const CartContextProvider = (props) => {
 
   // Remove item from cart
   const removeItem = (itemId) => {
-    setCartItems(cartItems.filter((item) => item.id !== itemId));
-  };
 
-  
+      setCartItems(cartItems.filter((item) => item.id !== itemId));
+  };
 
   // Define the values that the context will provide
   const contextValues = {

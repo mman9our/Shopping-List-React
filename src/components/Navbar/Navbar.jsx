@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import CartContextProvider, { CartContext } from "../Context/CartContext";
+import CartContextProvider, { CartContext } from "../../context/CartContext";
 
 const CartIcon = ({ itemCount }) => {
   return (
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="container">
           <NavLink to="/">
             <img
-              src="/assets/images/logo.png"
+              src="./src/assets/images/logo.png"
               width="100"
               height="100"
               alt="home"
@@ -89,7 +89,7 @@ const Navbar = () => {
               aria-label="Metalink account: Fiona doe"
             >
               <img
-                src="/assets/images/profile.jpg"
+                src="./src/assets/images/profile.jpg"
                 width="50"
                 height="50"
                 alt="Fiona doe"
