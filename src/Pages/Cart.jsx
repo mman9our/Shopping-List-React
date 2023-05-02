@@ -5,6 +5,7 @@ import Checkout from '../pages/Checkout';
 
 function Cart() {
   const { cartItems, removeItem, addItem } = useContext(CartContext);
+
   const [updatedCartItems, setUpdatedCartItems] = useState(cartItems);
 
   const handleRemoveItem = (itemId) => {
@@ -14,8 +15,6 @@ function Cart() {
 
   // Calculate total price of items in cart
   const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
-
-
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import CartContextProvider, { CartContext } from "../../context/CartContext";
+import  { CartContext } from "../../context/CartContext";
 
 const CartIcon = ({ itemCount }) => {
   return (
@@ -113,7 +113,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-
       </header>
     </>
   );
