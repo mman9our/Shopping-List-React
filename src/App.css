@@ -1094,6 +1094,17 @@ input{
     width: 100%;
     height: 40rem;
   }
+
+  .empty-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: var(--fw-700);
+    font-family: Urbanist
+  }
 }
 
 @media (max-width: 720px) {
@@ -1112,6 +1123,18 @@ input{
     gap: 8px;
     flex-direction: column;
     width: 80%;
+  }
+
+  .empty-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: var(--fw-700);
+    font-family: Urbanist;
+    padding: 20px;
   }
 }
 
