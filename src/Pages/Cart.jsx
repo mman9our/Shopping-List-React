@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import CARTIMAGE from '../../src/assets/images/svg/cart.svg';
 import Checkout from '../pages/Checkout';
-
+import Navbar from "../components/Navbar/Navbar";
 function Cart() {
   const { cartItems, removeItem, addItem } = useContext(CartContext);
 
@@ -18,6 +18,8 @@ function Cart() {
 
   return (
     <>
+      <Navbar />
+      
       <section className="section hero-cart" aria-labelledby="discover-label">
           {cartItems.length > 0 ? (
             <div className="container-cart">

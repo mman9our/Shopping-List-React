@@ -4,7 +4,7 @@ import  { CartContext } from "../../context/CartContext";
 
 const CartIcon = ({ itemCount }) => {
   return (
-    <NavLink to="/cart" className="navbar-link label-lg link:hover header-icon">
+    <NavLink to="/app/cart" className="navbar-link label-lg link:hover header-icon">
       <div style={{ position: "relative" }}>
         <ion-icon name="cart-outline"></ion-icon>
         {itemCount > 0 && (
@@ -48,9 +48,9 @@ const Navbar = () => {
     <>
       <header className="header" data-header>
         <div className="container">
-          <NavLink to="/">
+          <NavLink to="/app/home">
             <img
-              src="./src/assets/images/logo.png"
+              src="../src/assets/images/logo.png"
               width="100"
               height="100"
               alt="home"
@@ -61,20 +61,19 @@ const Navbar = () => {
             <ul className="navbar-list">
               <li>
                 <NavLink
-                  to="/"
+                  to="/app/home"
                   className="navbar-link label-lg link:hover header-icon"
                 >
                   <ion-icon name="home-outline" className="head-icon"></ion-icon>
                 </NavLink>
               </li>
-
               <li>
                 <CartIcon itemCount={cartItems.length} />
               </li>
 
               <li>
                 <NavLink
-                  to="/bookmarks"
+                  to="/app/home"
                   className="navbar-link label-lg link:hover header-icon"
                 >
                   <ion-icon name="bookmarks-outline"></ion-icon>
@@ -89,7 +88,7 @@ const Navbar = () => {
               aria-label="Metalink account: Fiona doe"
             >
               <img
-                src="./src/assets/images/profile.jpg"
+                src="../src/assets/images/profile.jpg"
                 width="50"
                 height="50"
                 alt="Fiona doe"

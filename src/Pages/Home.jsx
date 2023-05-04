@@ -6,10 +6,9 @@ import "../App.css";
 function Home() {
   return (
     <>
-        <Banner />
+      <Banner />
       <Items />
       <div className="body-bg-shape"></div>
-      
     </>
 );
 }
