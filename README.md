@@ -6,12 +6,6 @@
 - CSS
 - HTML
 
-## Installation
-
-1. Clone the repository using `git clone https://github.com/walifile/nft-marketplace-landing-page.git`
-2. Install dependencies using `npm install`
-3. Run the development server using `npm start`
-
 ## Usage
 
 Once the development server is running, you can view the theme by visiting `http://localhost:3000` in your web browser.

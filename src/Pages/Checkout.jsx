@@ -15,7 +15,7 @@ function Checkout() {
             <h2 className='checkout-title'>Order Details</h2>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form className='form-checkout' onSubmit={handleSubmit}>
         <div>
             <h4 htmlFor="name">Name:</h4>
             <input

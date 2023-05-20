@@ -7,23 +7,24 @@ const CartContextProvider = (props) => {
   // Set up state for cart items
   const [cartItems, setCartItems] = useState([]);
 
-  // Add item to cart or increase quantity if item of same category already exists
   const addItem = (item) => {
-    const existingItem = cartItems.find((cartItem) => cartItem.category === item.category);
-
-    if (existingItem) {
+    const existingItemIndex = cartItems.findIndex(
+      (cartItem) => cartItem.category === item.category
+    );
+  
+    if (existingItemIndex > -1) {
       setCartItems(
-        cartItems.map((cartItem) =>
-          cartItem.category === item.category
-            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+        cartItems.map((cartItem, index) =>
+          index === existingItemIndex
+            ? { ...cartItem }
             : cartItem
         )
       );
-
     } else {
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
     }
   };
+  
 
   // Remove item from cart
   const removeItem = (itemId) => {

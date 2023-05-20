@@ -60,7 +60,7 @@ const Items = () => {
 
                       <div className="card-price">
                         <img
-                          src="./src/assets/images/svg/ethereum.svg"
+                          src="../src/assets/images/svg/ethereum.svg"
                           width="16"
                           height="24"
                           loading="lazy"

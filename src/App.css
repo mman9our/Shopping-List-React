@@ -725,6 +725,13 @@ body {
   padding-top: 10px;
 }
 
+.header-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rem;
+}
+
 .checkout-title{
   color: #00a3ff;
 }
@@ -752,6 +759,20 @@ form{
   gap: 5rem;
 }
 
+#login-form{
+  width: 100%;  
+  /* padding: 5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#login-form input{
+  width: 40rem;
+}
+
 input{
   border: 1px solid #00a3ff;
   height: 4rem;
@@ -759,6 +780,12 @@ input{
   border-radius: var(--radius-12);
   color: #fff;
 }
+
+.login-container{
+  width: 100%;
+}
+
+
 
 
 
@@ -1094,6 +1121,17 @@ input{
     width: 100%;
     height: 40rem;
   }
+
+  .empty-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: var(--fw-700);
+    font-family: Urbanist
+  }
 }
 
 @media (max-width: 720px) {
@@ -1112,6 +1150,18 @@ input{
     gap: 8px;
     flex-direction: column;
     width: 80%;
+  }
+
+  .empty-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: var(--fw-700);
+    font-family: Urbanist;
+    padding: 20px;
   }
 }
 

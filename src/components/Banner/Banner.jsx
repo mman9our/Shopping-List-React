@@ -13,7 +13,6 @@ const Banner = () => {
           <p className="section-text body-lg">
           Welcome to our demo store, the premier marketplace for web3 artists and unique token collectors!
           </p>
-
         </div>
       </section>
     </>
