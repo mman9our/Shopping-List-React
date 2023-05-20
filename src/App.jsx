@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
 import Login from "./pages/Login";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import CartContextProvider from "./context/CartContext";
 import Navbar from "./components/Navbar/Navbar";
 
@@ -20,18 +20,30 @@ function App() {
 }
 
 function AppRoutes() {
-  const location = useLocation();
-  const isHomeOrCartPage = location.pathname.includes("/home") || location.pathname.includes("/cart");
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/home" element={<HomeWithNavbar />} />
+        <Route path="/cart" element={<CartWithNavbar />} />
+      </Routes>
+    </Suspense>
+  );
+}
 
+function HomeWithNavbar() {
   return (
     <>
-      {isHomeOrCartPage && <Navbar />}
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </Suspense>
+      <Navbar />
+      <Home />
+    </>
+  );
+}
+
+function CartWithNavbar() {
+  return (
+    <>
+      <Navbar />
+      <Cart />
     </>
   );
 }
