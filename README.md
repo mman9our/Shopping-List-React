@@ -1,5 +1,10 @@
 # Shopping List NFT
 
+![cover-min](https://github.com/mman9our/Shopping-List-React/assets/72463762/a7db3d25-22be-4edb-82ff-12ec5c364441)
+
+![Untitled video - Made with Clipchamp](https://github.com/mman9our/Shopping-List-React/assets/72463762/d2c17f1b-9117-44fa-8a83-34b6b823fa29)
+
+
 ## Technologies Used
 
 - ReactJS
